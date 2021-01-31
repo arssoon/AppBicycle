@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_green_light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="60dp"
+            android:background="@color/button_background"
+            android:orientation="vertical"
+            tools:ignore="UnknownId">
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="@dimen/fragment_profile_right_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@android:color/black"
+                android:text="@string/profile_fragment_name" />
+
+            <EditText
+                android:id="@+id/userNameET"
+                android:layout_width="@dimen/fragment_profile_right_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="@string/profile_fragment_your_name" />
+
+            <TextView
+                android:id="@+id/textViewSurname"
+                android:layout_width="@dimen/fragment_profile_right_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/profile_fragment_surname" />
+
+            <EditText
+                android:id="@+id/userSurnameET"
+                android:layout_width="@dimen/fragment_profile_right_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="20dp"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="20dp"
+                android:hint="@string/profile_fragment_your_surname" />
+
+            <Button
+                android:id="@+id/submitDataProfile"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@android:color/holo_green_light"
+                android:text="@string/submit_button"
+                android:textColor="@color/common_google_signin_btn_text_dark_default" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="179dp"
+            android:layout_height="177dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/image_margin"
+            android:background="@drawable/ic_radius_profile_image"/>
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/userImage"
+            android:text="@string/profile_fragment_email"
+            android:textSize="24sp"
+            tools:layout_marginTop="23dp" />
+
+        <TextView
+            android:id="@+id/userEmailET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewEmail"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+            android:autoSizeMaxTextSize="15sp"
+            android:hint="@string/profile_fragment_your_email" />
+
+        <LinearLayout
+            android:id="@+id/box2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/userEmailET"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/payPerson"
+                android:layout_width="match_parent"
+                android:background="#080"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="ZAPŁACILI"
+                android:textAlignment="center" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewPayPerson"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

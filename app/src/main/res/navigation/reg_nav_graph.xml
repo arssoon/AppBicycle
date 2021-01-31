@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reg_nav_graph"
+    app:startDestination="@id/fragmentLogin">
+
+    <fragment
+        tools:layout="@layout/fragment_sign_in"
+        android:id="@+id/fragmentLogin"
+        android:name="com.runbicycle.login.LoginFragment"
+        android:label="FragmentLogin" >
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentSignUp"
+            app:destination="@id/fragmentSignUp" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_sign_up"
+        android:id="@+id/fragmentSignUp"
+        android:name="com.runbicycle.registration.RegistrationFragment"
+        android:label="FragmentSignUp" />
+</navigation>

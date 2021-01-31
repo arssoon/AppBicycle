@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/holo_green_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/registration"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="40sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@android:color/holo_green_light">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email_registration"
+                        android:layout_width="match_parent"
+                        android:layout_height="63dp"
+                        android:background="@color/colorBackground_fragment"
+                        android:hint="@string/sign_up_hint_email"
+                        android:inputType="textNoSuggestions"
+                        android:paddingStart="15dp"
+                        android:textSize="22sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp">
+
+                    <EditText
+                        android:id="@+id/pass_registration"
+                        android:layout_width="match_parent"
+                        android:layout_height="63dp"
+                        android:background="@color/colorBackground_fragment"
+                        android:ems="10"
+                        android:hint="@string/sign_up_hint_password"
+                        android:inputType="textPassword"
+                        android:paddingStart="15dp"
+                        android:textSize="22sp"
+                        android:visibility="visible"
+                        tools:visibility="visible" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/repeat_pass_registration"
+                        android:layout_width="match_parent"
+                        android:layout_height="63dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorBackground_fragment"
+                        android:ems="10"
+                        android:hint="@string/sign_up_hint_repeat_password"
+                        android:inputType="textPassword"
+                        android:paddingStart="15dp"
+                        android:textSize="22sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/signUpButtonRegistration"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:background="@color/button_background"
+                    android:text="@string/signUpButton"
+                    android:textColor="@color/common_google_signin_btn_text_dark_default"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

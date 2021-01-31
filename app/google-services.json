@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "456661630420",
+    "project_id": "bicycledata-58f1e",
+    "storage_bucket": "bicycledata-58f1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456661630420:android:44bebfad67cf9bc712ea41",
+        "android_client_info": {
+          "package_name": "com.runbicycle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456661630420-qv7b7i9tsumf8uvn96510licipp17nas.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUr8aXXcwRYRNC-ddKBSDqZ0O2FnWt4IY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456661630420-qv7b7i9tsumf8uvn96510licipp17nas.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

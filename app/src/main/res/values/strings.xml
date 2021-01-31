@@ -1,0 +1,48 @@
+<resources>
+    //menu activity
+    <string name="menu_activity_title">Witamy pielgrzymowicza</string>
+    <string name="menu_activity_continue">Przejdź do logowania</string>
+    <string name="menu_activity_welcome">Przejdź do rejestracji</string>
+
+
+    <string name="app_name">Pielgrzymka Rowerowa</string>
+    <string name="login">ZALOGUJ SIĘ</string>
+    <string name="sign_in_email_hint">E-mail</string>
+    <string name="sign_up_hint_email">E-mail</string>
+    <string name="sign_in_password">Hasło</string>
+    <string name="sign_up_hint_password">Hasło</string>
+    <string name="sign_up_hint_repeat_password">Powtórz hasło</string>
+    <string name="signInButton">ZALOGUJ</string>
+    <string name="signUpButton">ZAREJESTRUJ</string>
+    <string name="database_row_name">Imię</string>
+    <string name="database_row_surname">Nazwisko</string>
+    <string name="submit_button">ZATWIERDŹ</string>
+    <string name="registration">ZAREJESTRUJ SIĘ</string>
+    <string name="main_login">LOGOWANIE</string>
+
+    // LIST_ROW - NAME I SURNAME
+    <string name="profile_name">IMIĘ</string>
+    <string name="profile_surname">NAZWISKO</string>
+    <string name="profile_image">Profile Image</string>
+
+
+    // PROFILE FRAGMENT
+    <string name="profile_fragment_name">IMIĘ</string>
+    <string name="profile_fragment_surname">NAZWISKO</string>
+    <string name="profile_fragment_email">E-mail</string>
+    <string name="profile_fragment_your_name">Twoje imię</string>
+    <string name="profile_fragment_your_surname">Twoje nazwisko</string>
+    <string name="profile_fragment_your_email">Twój E-mail</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+</resources>
